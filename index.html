@@ -1,0 +1,259 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Protect the planet </title>
+    <link rel="shortcut icon" href="images\icon.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link  href="style-responsive.css" rel="stylesheet"/>
+    <link  href="all.min.css" rel="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body onload="startTime()">
+    <header>
+      <div class="container">
+        <div class="weather-time">
+          <img src="SVG-Files\clock.svg" id="clock">
+          <h6></h6>
+          <div id="txt"> </div>
+        </div>
+        <div id="topbar">
+        </div>
+        <div id="phone">
+          <img src="images\phone-call.png" id="icon">
+          <a href="#" >012 345 6789</a>
+        </div>
+
+        <!-- mobile menu -->
+        <nav id="main">
+          <a href="#" id="logo"><img src="images\logo.png" alt="Logo"></a>
+                <div id="mySidebar" class="sidebar">
+                 <div class="mob-lang">
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                 </div>
+                 <div class="mob-log">
+                 </div>
+                 <div class="frontmenu">
+                      <a href="#activities">ΕΡΓΑ & ΔΡΑΣΗ</a>
+                      <a href="#donate">ΚΑΝΤΕ ΜΙΑ ΔΩΡΕΑ</a>
+                      <a href="#event">ΠΡΟΣΕΧΕΙΣ ΕΚΔΗΛΩΣΕΙΣ</a>
+                      <a href="#form">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                      <a href="#social">ΚΟΙΝΩΝΙΚΑ ΔΙΚΤΥΑ</a>
+                  </div>
+               </div>
+               <div id="mob-main">
+                 <button class="openbtn" onclick="openNav()">☰</button>
+               </div>
+
+          <!-- Desktop menu -->
+          <ul id="main-menu">
+            <li><a href="#activities">ΕΡΓΑ & ΔΡΑΣΗ</a></li>
+            <li><a href="#donate">ΚΑΝΤΕ ΜΙΑ ΔΩΡΕΑ</a></li>
+            <li><a href="#event">ΠΡΟΣΕΧΕΙΣ ΕΚΔΗΛΩΣΕΙΣ</a></li>
+            <li><a href="#form">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            <li><a href="#social">ΚΟΙΝΩΝΙΚΑ ΔΙΚΤΥΑ</a></li>
+          </ul>
+        </nav>
+
+        <div id="featured" >
+            <img src="images\icon.png">
+            <h2>Η αποστολή μας</h2>
+            <p>Lorem Ipsum is simply dummy
+              text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it
+              to make a type specimen book. It has survived
+              not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially
+              unchanged.
+             </p>
+             <button class="button-more"><a href="#donate">ΚΑΝΤΕ ΜΙΑ ΔΩΡΕΑ</a></button>
+      </div>
+    </header>
+
+    <main>
+      <section id="event">
+        <img src="images\event.png" id="eventlogo">
+        <h2 id="tl">Εκδήλωση και ενημέρωση για τους μικρούς μας φίλους!!</h2>
+        <div class="column">
+          <div class="col">
+            <h2 style="margin-top:40px;">Λίγα λόγια για την εκδήλωση</h2>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                It has roots in a piece of classical Latin literature from 45 BC,
+                making it over 2000 years old. Richard McClintock, a Latin professor
+                at Hampden-Sydney College in Virginia, looked up one of the more
+                obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                going through the cites of the word in classical literature,
+                discovered the undoubtable source. Lorem Ipsum comes from sections
+                1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+            </p>
+          </div>
+          <div class="col">
+            <br>
+            <h3 style="margin-top:20px;">Δραστηριοτητες</h3>
+            <ul style="margin-top:5px;">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Praesent nec metus eget ligula cursus elementum.</li>
+              <li>Integer id dui imperdiet, consectetur libero eu, rhoncus quam.</li>
+              <li>In bibendum sem sit amet tempus venenatis.</li>
+              <li>Mauris ac lectus ac ligula ornare hendrerit id sit amet odio.</li>
+              <li>Aenean a erat sed libero venenatis pulvinar.</li>
+            <ul>
+          </div>
+        </div>
+        <div id="date-event">
+          <h2>Κυριακή 26 Σεπτεμβρίου 2021</h2>
+        </div>
+      </section>
+
+      <section  id="donate">
+        <h3 id="donate-contact">ΚΑΝTΕ ΜΙΑ ΔΩΡΕΑ ΣΤΟΝ ΟΡΓΑΝΙΣΜΟ ΜΑΣ</h3>
+        <div class="donate-form">
+            <form method="post" action="#">
+              <label for="name">Ονοματεπώνυμο</label>
+              <input type="text" class="cform" name="name">
+
+              <label for="telephone">Τηλέφωνο</label>
+              <input type="text" id="telephone"class="cform" name="telephone">
+
+              <label for="email">Email</label>
+              <input type="email" id="email" class="cform" name="email">
+
+              <label for="price">Χρηματικό ποσό</label>
+              <h1 class="range_max light right">0 €</h1>
+              <input class="max" name="range_1" type="range" min="0" max="500" value="0" />
+
+              <input type="submit" name="submit" id="donatebutton" value="ΔΩΡΕΑ">
+            </form>
+        </div>
+      </section>
+
+      <section id="activities">
+        <img src="images\icon.png" id="icon-act">
+        <h3>ΕΡΓΑ & ΔΡΑΣΗ</h3>
+        <div class="actcol-mob">
+          <img src="./images/photo1.png">
+          <h2>Λήψη δράσης για τη κλιματική αλλαγή</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolor.</p>
+          <button type="button" class="more"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+        </div>
+        <div class="row-tab">
+          <div class="actcol-tab">
+            <img src="./images/photo1.png">
+            <h2>Λήψη δράσης για τη κλιματική αλλαγή </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            <button type="button" class="more"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+          </div>
+          <div class="actcol-tab">
+            <img src="./images/photo2.png">
+            <h2>Καθαρισμός θαλασσών και ακτών</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            <button type="button" class="more"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="actcol">
+            <img src="./images/photo1.png">
+            <h2>Λήψη δράσης για τη κλιματική αλλαγή</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            <button type="button" class="more"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+          </div>
+          <div class="actcol">
+            <img src="./images/photo2.png">
+            <h2>Καθαρισμός θαλασσών και ακτών</h2>
+            <p style="margin-top: 43px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            <button type="button" class="more"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+          </div>
+          <div class="actcol">
+            <img src="./images/photo3.png">
+            <h2>Αναδασώσεις </h2>
+            <p style="margin-top: 43px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            <button type="button" class="more"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+          </div>
+          <div class="actcol">
+            <img src="./images/photo4.png">
+            <h2>Κατασκευή αντικειμένων από ανακυκλώσιμα υλικά</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolor.</p>
+            <button type="button" class="more"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+          </div>
+        </div>
+        <button type="button"  id="buttonmore"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a></button>
+      </section>
+
+      <!-- contact section -->
+      <section id="form">
+        <h3 id="contact">ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+        <div class="contact-form">
+            <hr id="line1">
+            <form method="post" action="#">
+              <label for="name">Ονοματεπώνυμο</label>
+              <input type="text" class="cform" name="name">
+
+              <label for="telephone">Τηλέφωνο</label>
+              <input type="text" id="telephone"class="cform" name="telephone">
+
+              <label for="email">Email</label>
+              <input type="email" id="email" class="cform" name="email">
+
+              <label for="message">Μήνυμα</label>
+              <textarea id="message" name="message"></textarea>
+
+              <input type="submit" name="submit" id="submitbutton" value="ΑΠΟΣΤΟΛΗ">
+            </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+      <a href="#" id="logo-footer"><img src="images\logo.png" alt="Logo"></a>
+      <img src="" id="footer-Pan">
+      <div id="social-box">
+      <p id="social">
+          <a href="#"><img src="images\facebook.png" alt="FaceBook"></a>
+          <a href="#"><img src="images\twitter.png" alt="Twitter"></a>
+          <a href="#" ><img src="images\glinkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="images\instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="images\youtube.png" alt="YouTube"></a>
+      </p>
+      </div>
+      <!-- footer menu -->
+      <nav id="mainfoot">
+        <ul id="footer-menu">
+          <li><a href="#featured">Η ΑΠΟΣΤΟΛΗ ΜΑΣ</a></li>
+          <li><a href="#activities">ΕΡΓΑ & ΔΡΑΣΗ</a></li>
+          <li><a href="#donate">ΚΑΝΤΕ ΜΙΑ ΔΩΡΕΑ</a></li>
+          <li><a href="#event">ΠΡΟΣΕΧΕΙΣ ΕΚΔΗΛΩΣΕΙΣ</a></li>
+          <li><a href="#form">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        </ul>
+      </nav>
+      <h3 id="copyright">©2021 Christina Stylianou</h3>
+    </footer>
+
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/mobile-menu.js"></script>
+    <script src="./JS/to-top.js"></script>
+    <script src="./JS/price.js"></script>
+
+
+  </body>
+</html>
