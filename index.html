@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>STYLIANOU CHRISTINA - PORTFOLIO</title>
+    <title>Παναγιώτης & Χριστίνα - Ο γάμος μας</title>
     <link rel="shortcut icon" href="https://panagiotis-christina.github.io/our-wedding/images/icon.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,19 +30,19 @@
   <body>
     <div class="header-wrap" id="top">
         <div class="container-fluid">
-            <div class="row no-gutter same-height-md">
-                <div class="col-md-8">
+            <div class="row no-gutter">
+                <div class="col-md-12">
                     <div class="left-column">
                         <img src="images/logo_no_date.png" alt="logo">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="right-column">
                         <span>28</span>
                         <span>12</span>
                         <span>25</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -51,9 +51,9 @@
             <div class="row">
                 <div class="col-xs-10 t-left">
                     <div class="menu">
-                        <a href="#">Τοποθεσίες</a>
-                        <a href="#">Τραπέζια</a>
-                        <a href="#">Φωτογραφίες</a>
+                        <a href="#save-date">SAVE THE DATE</a>
+                        <a href="#events">ΠΟΤΕ & ΠΟΥ</a>
+                        <a href="#photos">ΜΟΙΡΑΣΤΕΙΤΕ ΤΙΣ ΦΩΤΟΓΡΑΦΙΕΣ ΣΑΣ</a>
                     </div>
                 </div>
                 <div class="col-xs-2">
@@ -63,14 +63,58 @@
         </div>
     </div>
 
-    <div class="scroll-target" id="personal-info"></div>
-    <div id="personal-info-wrap" class="personal-wrap wrap dot-menu-wrap">
+    <div class="scroll-target" id="save-date"></div>
+    <div id="save-date-wrap" class="date-wrap wrap dot-menu-wrap">
         <div class="container">
+            <div class="row no-gutter same-height-md">
+                <div class="col-md-6 col-md-push-6">
+                    <img src="images/save_the_date.png" alt="">
+                </div>
+                <div class="col-md-6 col-md-pull-6 t-center">
+                    <div class="title">SAVE THE DATE</div>
+                    <div class="date">28.12.25</div>
+                    <div id="countdown"></div><br>
+                    <canvas id="fireworks"></canvas>
+                    <div class="location">I.N. Κοιμήσεως της Θεοτόκου, Ακροβούνι, Καβάλα</div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="scroll-target" id="services"></div>
-    <div id="services-wrap" class="services-wrap wrap dot-menu-wrap">
+
+    <div class="scroll-target" id="events"></div>
+    <div id="events-wrap" class="events-wrap wrap dot-menu-wrap">
+        <div id="parallax">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row same-height-md">
+                    <div class="col-md-4 t-center">
+                        <div class="events-block right-event">
+                            <div class="title">ΤΕΛΕΤΗ</div>
+                            <div class="text">Κυριακή 28 Δεκεμβρίου 2025,<br>5μ.μ.<br>I.N. Κοιμήσεως της Θεοτόκου<br>Ακροβούνι, Καβάλα</div>
+                            <a target="_blank" href="https://maps.app.goo.gl/iZgRMHg8cDqpoo7LA">Δείτε την τοποθεσία</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="events-block central-event">
+                            <img src="images/plan.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 t-center">
+                        <div class="events-block right-event">
+                            <div class="title">ΔΕΞΙΩΣΗ</div>
+                            <div class="text">Κυριακή 28 Δεκεμβρίου 2025,<br>μετά την τελετή<br>Αίθουσα εκδηλώσεων "Rania"<br>Κηπιά, Καβάλα</div>
+                            <a target="_blank" href="https://maps.app.goo.gl/Rndve5YFXfBzZezcA">Δείτε την τοποθεσία</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-target" id="photos"></div>
+    <div id="photos-wrap" class="photos-wrap wrap dot-menu-wrap">
         <div class="container">
         </div>
     </div>
